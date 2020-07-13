@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap");
+body {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.6; }
+
+.service-section .service .icon {
+  /* Permalink - use tohis gradient: https://colorzilla.com/gradient-editor/#49b9ff+50,61c3ff+50 */
+  background: #49b9ff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #49b9ff 50%, #61c3ff 50%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #49b9ff 50%, #61c3ff 50%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #49b9ff 50%, #61c3ff 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49b9ff', endColorstr='#61c3ff',GradientType=1 );
+  /* IE6-9 */ }
+
+.navbar .navbar-nav .nav-item .nav-link, .btn-custom, .Gallery-section img, footer ul li a:hover {
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear; }
+
+.navbar {
+  background-color: #F6F9F9;
+  padding: 20px 0; }
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #2d3950;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 15px; }
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+      color: #fff;
+      background-color: #15a4fa;
+      border-radius: 10px; }
+
+.banner-section {
+  background-image: url(../images/Strict.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .banner-section .click {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .banner-section .row {
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .banner-section .row h2 {
+      font-size: 110px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .banner-section .row span {
+      height: 4px;
+      background: #15a4fa;
+      display: block;
+      margin-bottom: 20px; }
+    .banner-section .row P {
+      font-size: 19px;
+      color: #fff; }
+
+.btn-custom {
+  border: 2px solid #15a4fa;
+  padding: 13px 30px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 22px; }
+  .btn-custom:hover {
+    background: #15a4fa;
+    color: #fff; }
+
+.about-us-section {
+  background-color: #F6F9F9;
+  text-align: center;
+  padding: 50px 0; }
+  .about-us-section h3 {
+    font-size: 40px;
+    font-weight: 500; }
+  .about-us-section p {
+    font-size: 20px;
+    text-align: justify; }
+
+.service-section {
+  padding: 100px 0;
+  text-align: center; }
+  .service-section .service .icon {
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    margin: auto; }
+    .service-section .service .icon i {
+      text-shadow: 2px 2px 1px #2d3950; }
+  .service-section .service h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0; }
+  .service-section .service p {
+    font-size: 20px;
+    text-align: justify; }
+
+.Gallery-section {
+  padding: 50px 0; }
+  .Gallery-section h2 {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0; }
+  .Gallery-section P {
+    font-size: 20px;
+    text-align: center; }
+  .Gallery-section img {
+    margin-bottom: 15px; }
+    .Gallery-section img:hover {
+      background: #15a4fa; }
+
+.form-section {
+  background-image: url(../images/contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #000000bf;
+  padding: 50px 0; }
+  .form-section h2 {
+    font-size: 35px;
+    color: white;
+    text-align: center; }
+  .form-section p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    color: #fff;
+    text-align: center; }
+  .form-section input {
+    background-color: #2A354A;
+    height: 70px; }
+  .form-section textarea {
+    background-color: #2A354A; }
+
+footer {
+  background-color: #F6F9F9;
+  padding: 50px 0; }
+  footer p {
+    margin-bottom: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500px; }
+  footer ul li a {
+    margin-left: 10px;
+    background-color: #15a4fa;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #15a4fa;
+    border-radius: 10px; }
+    footer ul li a:hover {
+      background-color: transparent;
+      color: #15a4fa; }
+
+/*# sourceMappingURL=style.css.map */

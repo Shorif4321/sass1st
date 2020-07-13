@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+
+$PrimaryColor : #2d3950;
+$SecondaryColor : #15a4fa;
+$bgcolor : #F6F9F9;
+
+body{
+	font-family: 'Lora', serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+%gradient{
+/* Permalink - use tohis gradient: https://colorzilla.com/gradient-editor/#49b9ff+50,61c3ff+50 */
+background: #49b9ff; /* Old browsers */
+background: -moz-linear-gradient(left,  #49b9ff 50%, #61c3ff 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #49b9ff 50%,#61c3ff 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #49b9ff 50%,#61c3ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49b9ff', endColorstr='#61c3ff',GradientType=1 ); /* IE6-9 */
+
+
+}
+%transition{
+	transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear; 
+    -moz-transition: all 0.5s linear;
+}
+.navbar{
+	background-color: $bgcolor;
+	padding: 20px 0;
+	.navbar-nav{
+		.nav-item{
+
+			.nav-link{
+                color:$PrimaryColor;
+			    text-transform: uppercase;
+				font-weight: 500;
+				padding: 10px 15px;
+				@extend %transition;
+			&:hover{
+               color: #fff;
+               background-color: $SecondaryColor;
+               border-radius: 10px;
+			}	
+			}
+		}
+	}
+}
+
+.banner-section{
+			background-image: url(../images/Strict.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+            position: relative;
+	.click{
+		   position: absolute;
+		   color: white;
+		   font-size: 30px;
+		   bottom: 20px;
+		   left: 50%;
+		   transform: translateX(-50%);
+
+	}		
+	.row{
+			height:80vh;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		h2{   
+		    font-size: 110px;
+		    color: #fff;
+		    font-weight: 500;
+		    text-transform: uppercase;
+		}
+		span{
+            height: 4px;
+			background:$SecondaryColor;
+			display: block;
+			margin-bottom: 20px;
+		}
+		P{
+           font-size: 19px;
+           color: #fff;
+		}
+	}
+}
+
+.btn-custom{
+		border: 2px solid $SecondaryColor;
+	    padding: 13px 30px;
+	    color: #fff;
+	    border-radius: 10px;
+	    font-size: 22px;
+	    @extend %transition;
+
+    &:hover{
+    	background:$SecondaryColor;
+    	color: #fff;
+    }
+}
+
+
+.about-us-section{
+	background-color: $bgcolor;
+	text-align: center;
+	padding:50px 0;
+
+    h3{    
+    	font-size: 40px;
+       font-weight: 500;
+
+	}
+	p{
+       font-size: 20px;
+       text-align: justify;
+	}
+}
+
+
+.service-section{
+	padding: 100px 0;
+	text-align:center;
+	.service{
+		.icon{
+                @extend %gradient;
+                width: 100px;
+                height: 100px;
+                color: white;
+                font-size: 50px;
+                text-align: center;
+               line-height: 100px;
+               margin: auto;
+			i{
+                text-shadow: 2px 2px 1px #2d3950;
+			}
+         }
+			h2{
+				font-size: 30px;
+                font-weight: 500;
+                margin: 20px 0;
+              }		
+
+      		p{
+				font-size: 20px;
+                text-align: justify;
+            }
+        
+  	}		
+}
+
+
+.Gallery-section{
+	padding: 50px 0;
+	h2{
+       font-size: 35px;
+       font-weight: 500;
+       text-align: center;
+       padding: 20px 0;
+       margin: 0;
+	}
+	P{
+     font-size: 20px;
+     text-align: center;
+	}
+	img{
+		margin-bottom: 15px;
+		 @extend %transition;
+
+		&:hover {
+			background: $SecondaryColor;
+		}
+	}
+}
+
+.form-section{
+	background-image: url(../images/contact.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	background-color:#000000bf;
+	padding: 50px 0;
+	h2{
+       font-size: 35px;
+       color: white;
+       text-align: center;
+	}
+	p{
+        margin-top: 0;
+	    margin-bottom: 2rem;
+	    font-size: 20px;
+	    color: #fff;
+	    text-align: center;
+	}
+    input{
+    	background-color: #2A354A;
+    	height: 70px;
+    }
+    textarea{
+    	background-color: #2A354A;
+    }
+  }
+
+
+footer{
+         background-color: $bgcolor;
+         padding: 50px 0;
+	p{
+        margin-bottom: 0;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 500px;
+        
+	}
+	ul{
+
+		li{
+
+			a{
+				margin-left: 10px;
+				background-color:  $SecondaryColor;
+				display: block;
+				width:40px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				color: #fff;
+                border: 2px solid $SecondaryColor;
+                border-radius: 10px;
+			&:hover{
+				background-color:transparent;
+				color: $SecondaryColor;
+				 @extend %transition;
+
+	     		
+				}
+			}
+		}
+	}
+}
